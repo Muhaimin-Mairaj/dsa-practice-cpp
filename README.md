@@ -7,7 +7,7 @@ The primary objective of this repository is to master core `data structures` and
 
 ## Progress
 ### Recursion & Backtracking
-- [] `N-Queens Problem`
+- [x] `N-Queens Problem`
 - [] `Sudoku Solver`
 - [] `Rat in a maze`
 

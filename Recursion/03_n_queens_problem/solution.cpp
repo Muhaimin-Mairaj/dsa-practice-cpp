@@ -19,7 +19,6 @@ bool isSafe(std::vector<std::string> &board, int row, int col, int n){
     }
 
     return true;
-    std::cout << "debug here\n"; 
     
 }
 
