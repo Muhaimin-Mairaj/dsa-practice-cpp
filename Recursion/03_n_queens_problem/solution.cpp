@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+// This solution runs in O(n!) time complexity
+
 bool isSafe(std::vector<std::string> &board, int row, int col, int n){
     for (int i = 0; i < n; i++){
         if(board[row][i] == 'Q') return false;

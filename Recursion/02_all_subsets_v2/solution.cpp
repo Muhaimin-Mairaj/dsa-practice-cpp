@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-// This solutions runs in O(n * 2^n) complexity
+// This solution runs in O(n * 2^n) time complexity
 
 void sortVector(std::vector<int> &nums){
     for(int i = 0; i < nums.size()-1; i++){

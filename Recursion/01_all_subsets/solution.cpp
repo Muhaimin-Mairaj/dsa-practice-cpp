@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-// This solutions runs in O(n * 2^n) complexity
+// This solution runs in O(n * 2^n) time complexity
 void getAllSubsets(std::vector<int> nums, std::vector<int> &ans, int idx, std::vector<std::vector<int>> &subsets){
     if (idx == nums.size()){
         subsets.push_back({ans});
