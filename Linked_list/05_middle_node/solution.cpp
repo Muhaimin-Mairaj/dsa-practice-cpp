@@ -13,49 +13,31 @@ void del_list(Node* &head);
 
 
 // SOLUTION TO THE PROBLEM
-Node* del_at_pos(Node* &head, int pos){
-    if(pos < 1) return nullptr;
+void middle_node(Node* &head){
+    if(head == nullptr) return;
 
-    if(pos == 1){
-        if(head != nullptr){
-            delete head;
-            head = nullptr;
-        }
-        return nullptr;
+    Node* slow = head;
+    Node* fast = head;
+    while(fast != nullptr && fast->next != nullptr){
+        slow = slow->next;
+        fast = fast->next->next;
     }
-
-    Node* curr = head;
-    for(int i = 1; i < pos-1 && curr != nullptr; i++){
-        curr = curr->next;
-    }
-
-    if(curr == nullptr) return nullptr;
-
-    Node* temp = curr->next->next;
-    delete curr->next;
-    curr->next = temp;
-    return head;
-}
-
-void del_every_kth(Node* &head, int k){
-    int i = 0;
-    while(del_at_pos(head,k + k*i - i)) i += 1;
+    std::cout << "Middle Node: " << slow->data << "\n";
 }
 // SOLUTION ENDS
 
 
 int main(){
     Node* head = nullptr;
-    insert_at_begg(head,6);
-    insert_at_begg(head,5);
-    insert_at_begg(head,4);
-    insert_at_begg(head,3);
-    insert_at_begg(head,2);
-    insert_at_begg(head,1);
+    insert_at_begg(head,60);
+    insert_at_begg(head,50);
+    insert_at_begg(head,40);
+    insert_at_begg(head,30);
+    insert_at_begg(head,20);
+    insert_at_begg(head,10);
     traverse_list(head);
 
-    del_every_kth(head,2);
-    traverse_list(head);
+    middle_node(head);
 
     del_list(head);
     return 0;

@@ -2,8 +2,7 @@
 ### Difficulty: _`Easy`_
 ---
 ### **Statement**
-- Given a `singly linked list`, the task is to remove k<sup>th</sup> node of a linked list. Assume that k is always less than or equal to length of a linked list.
-
+Given a `singly linked list`, the task is to remove every k<sup>th</sup> node of a linked list. Assume that k is always less than or equal to length of a linked list.
 
 ---
 ### **Example 1**
