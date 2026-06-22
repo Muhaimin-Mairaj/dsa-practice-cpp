@@ -38,6 +38,8 @@ int main(){
 
     reverse(head);
     traverse(head);
+
+    del_list(head);
     return 0;
 }
 
@@ -84,7 +86,6 @@ void del_list(Node* &head){
     while(head){
         Node* temp = head->next;
         delete head;
-        temp->prev = nullptr;
         head = temp;
     }
 }
