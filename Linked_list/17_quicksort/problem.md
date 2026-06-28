@@ -2,7 +2,7 @@
 ### Difficulty: _`Medium`_
 ---
 ### **Statement**
-Given a linked list, apply the `Quicksort` algorithm to sort the linked list. To sort the linked list, change pointers rather than swapping data; 
+Given a linked list, apply the `Quicksort` algorithm to sort the linked list. 
 
 ---
 ### **Example 1**
