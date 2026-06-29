@@ -51,8 +51,6 @@ Node* quickSort(Node* head){
 
 int main(){
     Node* head = nullptr;
-    // insert_at_begg(head,3);
-    // insert_at_begg(head,2);
     insert_at_begg(head,5);
     insert_at_begg(head,4);
     insert_at_begg(head,9);
