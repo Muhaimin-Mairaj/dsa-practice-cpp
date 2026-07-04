@@ -12,7 +12,8 @@ The primary objective of this repository is to master core `data structures` and
 - [] `Rat in a maze`
 
 ### Data Structures
-- [] `Linked List`
+- [x] `Linked List`
+- [] `Hashing`
 - [] `Stacks`
 - [] `Queues`
 - [] `Binary Tree`
